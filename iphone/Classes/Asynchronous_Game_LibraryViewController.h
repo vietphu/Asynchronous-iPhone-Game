@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Asynchronous_iPhone_GameViewController : UIViewController {
+@interface Asynchronous_Game_LibraryViewController : UIViewController {
 
 }
 

@@ -8,15 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@class Asynchronous_iPhone_GameViewController;
+@class Asynchronous_Game_LibraryViewController;
 
-@interface Asynchronous_iPhone_GameAppDelegate : NSObject <UIApplicationDelegate> {
+@interface Asynchronous_Game_LibraryAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
-    Asynchronous_iPhone_GameViewController *viewController;
+    Asynchronous_Game_LibraryViewController *viewController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet Asynchronous_iPhone_GameViewController *viewController;
+@property (nonatomic, retain) IBOutlet Asynchronous_Game_LibraryViewController *viewController;
 
 @end
 

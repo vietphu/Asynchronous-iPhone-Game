@@ -6,9 +6,9 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "Asynchronous_iPhone_GameViewController.h"
+#import "Asynchronous_Game_LibraryViewController.h"
 
-@implementation Asynchronous_iPhone_GameViewController
+@implementation Asynchronous_Game_LibraryViewController
 
 
 

@@ -6,10 +6,10 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "Asynchronous_iPhone_GameAppDelegate.h"
-#import "Asynchronous_iPhone_GameViewController.h"
+#import "Asynchronous_Game_LibraryAppDelegate.h"
+#import "Asynchronous_Game_LibraryViewController.h"
 
-@implementation Asynchronous_iPhone_GameAppDelegate
+@implementation Asynchronous_Game_LibraryAppDelegate
 
 @synthesize window;
 @synthesize viewController;
