@@ -1,0 +1,47 @@
+To use the Asynchronous Game Library, follow these instructions.
+
+
+ === Step 1: Basic Setup ===
+
+a. Copy the AGL folder and files into your application.
+
+
+
+ === Step 2: Register URL Scheme ===
+
+Notes: If you have already created a URL Scheme for your app, you may skip this step.
+       Optionally, you may want to register your App's url here: http://handleopenurl.com/
+
+
+a.  Edit your Info.plist file.
+b.  Add a row with "URL Types" as the key.
+c.  Expand Item 0, and edit the URL Identifier.
+        By convention, this should probably be a reverse domain name (example: com.domain.appname)
+d.  Right click on Item 0, and add another row, this time with key "URL Schemes". Expand it,
+        and for its Item 0, enter the string that will be your app's protocol. 
+        (example: to use myapp:// you would enter "myapp".)
+e.  Save your Info.plist, that's it!
+
+
+ === Step 3: Modify your App Delegate ===
+
+a.  Open your App Delegate implementation file (.m), and add the following near the other #import statements:
+
+#import "AGLSetup.h"
+
+b.  Add the following method (usually after your applicationWillTerminate definition):
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+	return [[AGLStart sharedAGLStart] handleOpenURL:url];
+}
+
+
+ === Step 4: Set Up New Game ===
+TODO
+
+
+ === Step 5: ... ===
+
+
+
+

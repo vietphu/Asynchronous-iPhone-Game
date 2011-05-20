@@ -8,6 +8,8 @@
 
 #import "Asynchronous_Game_LibraryAppDelegate.h"
 #import "Asynchronous_Game_LibraryViewController.h"
+#import "AGLStart.h"
+
 
 @implementation Asynchronous_Game_LibraryAppDelegate
 
@@ -65,6 +67,10 @@
      Called when the application is about to terminate.
      See also applicationDidEnterBackground:.
      */
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+	return [[AGLStart sharedAGLStart] handleOpenURL:url];
 }
 
 

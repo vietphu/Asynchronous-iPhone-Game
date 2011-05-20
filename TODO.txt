@@ -1,0 +1,22 @@
+
+New Game
+   - exaample UI (table view with players picked, table for players to chose from?)
+   - Client side code for getting players to choose from (existing "friends" list)
+   - client side code for notifying NEW players of invite (via email)
+   - client side code to notify server when a player accepts an email invite
+x    * handles incoming URL
+     * makes server call with game GUID
+       - server adds player to game
+       - server checks whether all players have accepted (sends push)
+   - server code for kicking off push notifications
+     * for existing players invited to new game
+     * for when all players have accepted invitations
+   - send emails to invite players
+     * emails contain custom urls with game GUID
+
+Player Profile
+   - email
+   - gamecenter ID?
+
+
+

@@ -15,6 +15,7 @@
 		2899E5220DE3E06400AC0155 /* Asynchronous_iPhone_GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* Asynchronous_iPhone_GameViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* Asynchronous_Game_LibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* Asynchronous_Game_LibraryViewController.m */; };
+		8516B63C138649B5007C9463 /* AGL.m in Sources */ = {isa = PBXBuildFile; fileRef = 8516B63B138649B5007C9463 /* AGL.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,9 @@
 		28D7ACF70DDB3853001CB0EB /* Asynchronous_Game_LibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Asynchronous_Game_LibraryViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Asynchronous_iPhone_Game_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Asynchronous_iPhone_Game_Prefix.pch; sourceTree = "<group>"; };
+		8516B63713864967007C9463 /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
+		8516B63A138649B5007C9463 /* AGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGL.h; sourceTree = "<group>"; };
+		8516B63B138649B5007C9463 /* AGL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGL.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Asynchronous_iPhone_Game-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Asynchronous_iPhone_Game-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,8 +115,29 @@
 		85150E75137CD09800170FA7 /* AGL */ = {
 			isa = PBXGroup;
 			children = (
+				8516B63913864991007C9463 /* Classes */,
+				8516B63513864967007C9463 /* Externals */,
 			);
 			name = AGL;
+			sourceTree = "<group>";
+		};
+		8516B63513864967007C9463 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				8516B63713864967007C9463 /* SynthesizeSingleton.h */,
+			);
+			name = Externals;
+			path = AGL/Externals;
+			sourceTree = "<group>";
+		};
+		8516B63913864991007C9463 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8516B63A138649B5007C9463 /* AGL.h */,
+				8516B63B138649B5007C9463 /* AGL.m */,
+			);
+			name = Classes;
+			path = AGL/Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +204,7 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* Asynchronous_Game_LibraryAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* Asynchronous_Game_LibraryViewController.m in Sources */,
+				8516B63C138649B5007C9463 /* AGL.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
